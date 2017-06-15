@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+ @import "variables";
+ @import "mixins/mixins";
+ @import "grid";
+ @import "nav";
+ @import "home";
+ @import "footer";
+
+html {
+  height: 100%;
+}
+
+ body {
+  background: $light_bg;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  padding-top: $navbar-height;
+  @include type-body;
+  color: $light_text_primary;
+}
+
+* {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.divider {
+  border-bottom: solid 1px $divider_color;
+}
+
+.backdrop {
+  @include backdrop;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  min-width: 160px;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0px 20px;
+  outline: none;
+  cursor: pointer;
+  font-weight: $font_weight_regular;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background: $color_primary;
+  color: $dark_text_primary;
+}
+
+.btn-outline {
+  border: solid 1px $color_primary;
+  color: $color_primary;
+  background: #fff;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-container {
+  min-height: 100%;
+}
+
+.container {
+  padding: 0px $horizontal-padding 0px $horizontal-padding;
+}

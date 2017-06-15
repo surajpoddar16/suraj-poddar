@@ -1,0 +1,53 @@
+.intro {
+  margin-top: 128px;
+  margin-bottom: 128px;
+  width: 620px;
+  position: relative;
+  .my-photo {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+  }
+
+  .intro-detail {
+    margin-left: 240px;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  .btn-outline {
+    margin-bottom: 15px;
+  }
+
+  .btn-primary {
+    margin-bottom: 45px;
+  }
+
+  p {
+    color: $light_text_secondary;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    width: auto;
+    margin-top: 64px;
+    .my-photo {
+      position: static;
+      display: block;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .intro-detail {
+      margin-left: 0px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 300;
+    }
+  }
+}

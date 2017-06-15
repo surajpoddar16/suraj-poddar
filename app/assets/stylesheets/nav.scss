@@ -1,0 +1,86 @@
+.nav {
+  width: 100%;
+  height: $navbar-height;
+  color: $light_text_primary;
+  padding: 0px $horizontal-padding;
+  position: absolute;
+  z-index: 6;
+  left: 0px;
+  top: 0px;
+}
+
+.navbar-header {
+  @include type-title;
+  display: inline-block;
+  line-height: $navbar-height;
+  img {
+    height: 64px;
+    vertical-align: middle;
+  }
+}
+
+.navbar-up-button {
+  padding: 12px;
+  position: relative;
+  top: 4px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  float: right;
+  @include type-body;
+  display: inline-block;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  @media screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0px 12px 0px 12px;
+    line-height: $navbar-height;
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    // transition: background 300ms ease;
+    a {
+      cursor: pointer;
+      &.active, &:hover {
+        // background: $hover_color_light;
+      }
+    }
+
+    // @media screen and (max-width: $screen-sm-max) {
+    //   padding: 6px 24px;
+    //   font-size: $font_size_body;
+    //   cursor: pointer;
+    //   display: block;
+    //   color: $light_text_primary;
+    //   line-height: $font_size_body * 2;
+    //   &.active {
+    //     background: $light_bg;
+    //   }
+    // }
+  }
+}
+
+.menu-open-button {
+  display: inline-block;
+  float: right;
+  margin-right: -12px;
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  border-radius: 32px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  i {
+    vertical-align: middle;
+  }
+  @media screen and (min-width: $screen-md-min) {
+    display: none;
+  }
+}

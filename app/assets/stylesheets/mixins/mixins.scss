@@ -1,0 +1,47 @@
+@import "./clearfix.scss";
+@import "./grid.scss";
+
+@mixin material-shadow($depth) {
+  box-shadow: 0 0 $depth 0 rgba(0, 0, 0, .12), 0 $depth $depth 0 rgba(0, 0, 0, .24);
+}
+
+@mixin type-title {
+  font-size: $font_size_title;
+  font-weight: $font_weight_regular;
+}
+
+@mixin type-menu {
+  font-size: $font_size_body;
+  font-weight: $font_weight_medium;
+}
+
+@mixin type-body {
+  font-size: $font_size_body;
+  font-weight: $font_weight_regular;
+}
+@mixin type-button {
+  font-size: $font_size_body;
+  font-weight: $font_weight_regular;
+}
+
+@mixin type-button-lg {
+  font-size: $font_size_title;
+  font-weight: $font_weight_light;
+}
+
+@mixin backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: $backdrop_color;
+  z-index: 15;
+  opacity: 0;
+  display: none;
+  transition: opacity 300ms ease;
+  &.visible {
+    opacity: 1;
+  }
+}
