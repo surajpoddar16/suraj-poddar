@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="80px" viewBox="0 0 65 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.54">
+        <g id="Skills" transform="translate(-394.000000, -654.000000)" fill="#000000">
+            <g id="Group-6" transform="translate(382.000000, 427.000000)">
+                <g id="sql" transform="translate(12.000000, 227.000000)">
+                    <g id="Group-9">
+                        <path d="M0.0844337015,59.2988384 L0,69.2952194 C16.5707286,87.3282025 60.8401512,77.025388 64.2587903,69.7581817 L64.0054892,59 C64.0054892,59 34.0886738,75.4859009 0.0844337015,59.2988384 Z" id="Path-2"></path>
+                        <path d="M0.0844337015,40.2988384 L0,50.2952194 C16.5707286,68.3282025 60.8401512,58.025388 64.2587903,50.7581817 L64.0054892,40 C64.0054892,40 34.0886738,56.4859009 0.0844337015,40.2988384 Z" id="Path-2"></path>
+                        <path d="M0.0844337015,22.2988384 L0,32.2952194 C16.5707286,50.3282025 60.8401512,40.025388 64.2587903,32.7581817 L64.0054892,22 C64.0054892,22 34.0886738,38.4859009 0.0844337015,22.2988384 Z" id="Path-2"></path>
+                        <ellipse id="Oval-2" cx="32.4087591" cy="11.3868613" rx="32.4087591" ry="11.3868613"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
