@@ -63,8 +63,11 @@ class WelcomeController < ApplicationController
   def design
     @designs = Array.new
     @designs.push({ 'title' => 'Highwaydelite', 'screenshots' => ['design_hd_1.png', 'design_hd_2.png', 'design_hd_3.png', 'design_hd_4.png', 'design_hd_5.png', 'design_hd_6.png', 'design_hd_7.png', 'design_hd_8.png'] });
+    @designs.push({ 'title' => 'Club Wholesale', 'screenshots' => ['design_cw_1.png', 'design_cw_2.png', 'design_cw_3.png', 'design_cw_4.png', 'design_cw_5.png', 'design_cw_6.png'] });
+    @designs.push({ 'title' => 'Dalmia Dealers App', 'screenshots' => ['design_dalmia_1.png', 'design_dalmia_2.png', 'design_dalmia_3.png', 'design_dalmia_4.png', 'design_dalmia_5.png', 'design_dalmia_6.png'] });
+    @designs.push({ 'title' => 'ISCON Bhakti App', 'screenshots' => ['design_bhakti_1.png', 'design_bhakti_1.png', 'design_bhakti_1.png', 'design_bhakti_1.png', 'design_bhakti_1.png', 'design_bhakti_1.png'] });
+    @designs.push({ 'title' => 'Gupta Panjika', 'screenshots' => ['design_gp_1.png', 'design_gp_2.png', 'design_gp_3.png', 'design_gp_4.png', 'design_gp_5.png', 'design_gp_6.png'] });
     @designs.push({ 'title' => 'Eventr', 'screenshots' => ['design_eventr_1.png', 'design_eventr_2.png', 'design_eventr_3.png', 'design_eventr_4.png', 'design_eventr_5.png', 'design_eventr_6.png', 'design_eventr_7.png', 'design_eventr_8.png'] });
-
     render
   end
 end
