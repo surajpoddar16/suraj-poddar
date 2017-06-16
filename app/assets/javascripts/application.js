@@ -15,7 +15,15 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).on('turbolinks:load', function() {
+  loadSliders();
+});
+
 $(document).ready(function(){
+  loadSliders();
+});
+
+function loadSliders() {
   $('.design-section .images').slick({
     infinite: false,
     autoplay: false,
@@ -48,4 +56,4 @@ $(document).ready(function(){
       }
     ]
   });
-});
+}
