@@ -17,6 +17,7 @@
 
 $(document).on('turbolinks:load', function() {
   loadSliders();
+  menuClickListener();
 });
 
 $(document).ready(function(){
@@ -55,5 +56,19 @@ function loadSliders() {
         }
       }
     ]
+  });
+}
+
+function menuClickListener() {
+  $(document).on("click", function (e) {
+    if ($(e.target).is(".menu-icon")) {
+      if ($(".navbar-menu").hasClass("show")) {
+        $(".navbar-menu").removeClass("show");
+      } else {
+        $(".navbar-menu").addClass("show");
+      }
+    } else {
+      $(".navbar-menu").removeClass("show");
+    }
   });
 }

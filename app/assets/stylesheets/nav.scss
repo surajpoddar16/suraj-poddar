@@ -17,6 +17,20 @@
     height: 64px;
     vertical-align: middle;
   }
+
+  @media screen and (max-width: $screen-xs-max) {
+    display: block;
+  }
+
+  .menu-icon {
+    width: 32px;
+    height: $navbar-height;
+    cursor: pointer;
+    float: right;
+    @media screen and (min-width: $screen-sm-min) {
+      display: none;
+    }
+  }
 }
 
 .navbar-up-button {
@@ -34,7 +48,14 @@
   padding: 0px;
   margin: 0px;
   @media screen and (max-width: $screen-xs-max) {
+    position: absolute;
+    float: none;
+    right: $horizontal-padding;
+    background: $dark_bg;
     display: none;
+    &.show {
+      display: inline-block;
+    }
   }
 
   li {
@@ -52,17 +73,14 @@
       }
     }
 
-    // @media screen and (max-width: $screen-sm-max) {
-    //   padding: 6px 24px;
-    //   font-size: $font_size_body;
-    //   cursor: pointer;
-    //   display: block;
-    //   color: $light_text_primary;
-    //   line-height: $font_size_body * 2;
-    //   &.active {
-    //     background: $light_bg;
-    //   }
-    // }
+    @media screen and (max-width: $screen-sm-max) {
+      padding: 6px 24px;
+      font-size: $font_size_body;
+      cursor: pointer;
+      display: block;
+      color: $dark_text_primary;
+      line-height: $font_size_body * 2;
+    }
   }
 }
 
