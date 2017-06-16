@@ -1,5 +1,16 @@
-<div class="container page-container secondary-page">
+<div class="container design-container">
   <h1>I focus on designing for best user experience &#x2618</h1>
-  <div class="row">
-  </div>
 </div>
+
+<% @designs.each_with_index do |design, index| %>
+  <div class="design-section">
+    <div class="container"><h2><%= index + 1 %>. <%= design['title'] %></h2></div>
+    <div class="images-container">
+      <div class="images">
+        <% design['screenshots'].each do |screenshot| %>
+          <div><%= image_tag screenshot %></div>
+        <% end%>
+      </div>
+    </div>
+  </div>
+<% end%>

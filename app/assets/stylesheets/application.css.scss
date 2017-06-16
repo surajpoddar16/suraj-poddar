@@ -13,16 +13,17 @@
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
- @import "variables";
- @import "mixins/mixins";
- @import "grid";
- @import "nav";
- @import "home";
- @import "footer";
- @import "photos";
- @import "skills";
- @import "development";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "variables";
+@import "mixins/mixins";
+@import "grid";
+@import "nav";
+@import "home";
+@import "footer";
+@import "photos";
+@import "skills";
+@import "development";
+@import "design";
 
 html {
   height: 100%;

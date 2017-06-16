@@ -61,6 +61,10 @@ class WelcomeController < ApplicationController
   end
 
   def design
+    @designs = Array.new
+    @designs.push({ 'title' => 'Highwaydelite', 'screenshots' => ['design_hd_1.png', 'design_hd_2.png', 'design_hd_3.png', 'design_hd_4.png', 'design_hd_5.png', 'design_hd_6.png', 'design_hd_7.png', 'design_hd_8.png'] });
+    @designs.push({ 'title' => 'Eventr', 'screenshots' => ['design_eventr_1.png', 'design_eventr_2.png', 'design_eventr_3.png', 'design_eventr_4.png', 'design_eventr_5.png', 'design_eventr_6.png', 'design_eventr_7.png', 'design_eventr_8.png'] });
+
     render
   end
 end
