@@ -17,11 +17,11 @@
 
 $(document).on('turbolinks:load', function() {
   loadSliders();
-  menuClickListener();
 });
 
 $(document).ready(function(){
   loadSliders();
+  menuClickListener();
 });
 
 function loadSliders() {
