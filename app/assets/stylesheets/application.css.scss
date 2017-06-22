@@ -64,17 +64,24 @@ html {
   cursor: pointer;
   font-weight: $font_weight_regular;
   font-size: 18px;
+  transition: background 200ms ease;
 }
 
 .btn-primary {
   background: $color_primary;
   color: $dark_text_primary;
+  &:hover,&:active {
+    background: lighten($color_primary, 10%);
+  }
 }
 
 .btn-outline {
   border: solid 1px $color_primary;
   color: $color_primary;
   background: #fff;
+  &:hover,&:active {
+    background: darken(#fff, 10%);
+  }
 }
 
 
